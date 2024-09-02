@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies Help</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Foodies</h1>
+    </div>
+    <div class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="search.html" class="active">Search</a>
+        <a href="offers.html" class="active">Offers</a>
+        <a href="help.html" class="active">Help</a>
+        <a href="login.html" class="active">Sign In</a>
+        <a href="cart.html" class="active">Cart</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>Help & Support</h2>
+            <p class="text">How can we assist you today?</p>
+            
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq">
+                <h4>How do I place an order?</h4>
+                <p>You can place an order by browsing our menu, adding items to your cart, and checking out using your preferred payment method.</p>
+                
+                <h4>What are the delivery charges?</h4>
+                <p>Delivery charges vary based on your location and the total amount of your order. You can see the delivery charges at checkout.</p>
+                
+                <h4>How can I track my order?</h4>
+                <p>You can track your order in the 'My Orders' section of your account.</p>
+                
+                <h4>What is the estimated delivery time?</h4>
+                <p>The estimated delivery time depends on your location and the restaurant you ordered from. It is typically displayed at checkout.</p>
+                
+                <h4>How do I cancel my order?</h4>
+                <p>You can cancel your order from the 'My Orders' section before it is confirmed by the restaurant. If the restaurant has already confirmed your order, please contact our support team for assistance.</p>
+            </div>
+            
+            <h3>Contact Us</h3>
+            <p class="text">If you have any other questions or need further assistance, feel free to reach out to us:</p>
+            <ul class="contact-info">
+                <li>Email: support@foodies.com</li>
+                <li>Phone: 123-456-7890</li>
+                <li>Address: 123 Foodies Street, Food Town, FT 12345</li>
+            </ul>
+            
+            <h3>Submit a Query</h3>
+            <form action="submit_query.php" method="post" class="support-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="query">Query:</label>
+                <textarea id="query" name="query" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: support@foodies.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Foodies Street, Food Town, FT 12345</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook |</a>
+                <a href="#">Twitter |</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Foodies | All rights reserved
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

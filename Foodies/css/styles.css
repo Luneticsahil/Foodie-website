@@ -1,0 +1,449 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background: linear-gradient(to right, #1E90FF, #00BFFF);
+    padding: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Menu Bar Styles */
+.nav {
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    background-color: #1E90FF; /* Blue color */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.nav a:hover {
+    background-color: #187bcd; /* Darker blue on hover */
+}
+
+.nav a.active {
+    background-color: #ffffff; /* White background for active link */
+    color: #1E90FF; /* Blue text for active link */
+}
+
+/* Responsive Design for Menu Bar */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center;
+    }
+    .nav a {
+        margin: 5px 0;
+    }
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text {
+    color: #555;
+    font-size: 1.0em;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+.content h2 {
+    color: #1E90FF;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+
+
+
+.content h3 {
+    color: #1E90FF;
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.category-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.category {
+    flex: 0 0 auto;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+}
+.category a {
+    text-decoration: none;
+    color: inherit;
+}
+.category img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the restaurant cards */
+    gap: 20px;
+    padding: 10px 0;
+}
+.restaurant {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(33.333% - 20px);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.restaurant a {
+    text-decoration: none;
+    color: inherit;
+}
+.restaurant img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.restaurant h4 {
+    margin: 10px 0 0;
+    color: #1E90FF; /* Blue color */
+}
+
+
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #00BFFF;
+}
+
+
+
+/* Offers List Styles */
+.offers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.offer {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+}
+
+.offer img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.offer-details {
+    padding: 20px;
+}
+
+.offer-details h3 {
+    margin-top: 0;
+    color: #1E90FF;
+    font-size: 1.5em;
+}
+
+.offer-details p {
+    color: #555;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.offer-details button {
+    padding: 10px 20px;
+    background-color: #1E90FF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.offer-details button:hover {
+    background-color: #00BFFF;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .offer {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .offer {
+        width: calc(100% - 20px);
+    }
+}
+
+.faq {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h2, h3, h4 {
+    color: #333;
+}
+
+.faq {
+    margin-left: 10px;
+
+}
+
+.faq h4 {
+    margin-top: 20px;
+}
+
+.faq p {
+    margin: 10px 0;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.contact-info li {
+    margin: 5px 0;
+}
+
+.support-form {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.support-form label {
+    margin-top: 10px;
+}
+
+.support-form input, 
+.support-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.support-form button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.support-form button:hover {
+    background-color: #ff3b2e;
+}
+
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #f9b7a2;
+    
+}
+
+
+
+
+.sign-in-form label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.sign-in-form input[type="text"],
+.sign-in-form input[type="password"] {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sign-in-form input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #8dee5d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sign-in-form input[type="submit"]:hover {
+    background-color: #ff3b2e;
+}
+
+.sig {
+    text-align: center !important;
+    color: #499cfb !important;
+    
+}
+
+
+
+
+.cart-table {
+    width: 92%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.cart-table th, .cart-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #81e07b;
+    color: white;
+}
+
+.remove-btn, .checkout-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.remove-btn:hover, .checkout-btn:hover {
+    background-color: #ff3b2e;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section a {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+    color: #00BFFF;
+}
+
+.footer-bottom {
+    padding-top: 10px;
+    border-top: 1px solid #ff6f61;
+}
+
+
